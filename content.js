@@ -63,7 +63,7 @@ window.runLinkedinSearchAndScrape = async function (keywords, maxPosts) {
     document.querySelector('[aria-label*="Date posted"]');
   if (dateFilterBtn) {
     dateFilterBtn.click();
-    await delay(300);
+    await delay(500);
     const pastMonthLabel = document.querySelector('label[for="datePosted-past-month"]') ||
       [...document.querySelectorAll("label")].find((l) => {
         const t = (l.innerText || "").toLowerCase();
@@ -71,7 +71,7 @@ window.runLinkedinSearchAndScrape = async function (keywords, maxPosts) {
       });
     if (pastMonthLabel) {
       pastMonthLabel.click();
-      await delay(200);
+      await delay(300);
       const applyBtn = pastMonthLabel.closest('form')
         ?.querySelector('button[aria-label="Apply current filter to show results"]');
       applyBtn?.click();
