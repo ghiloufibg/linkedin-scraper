@@ -18,15 +18,8 @@ export them as a **CSV file**.
 
 ## Installation
 
-1. Clone or download this repository.
+1. **Download** and Unzip the `linkedin-scraper.zip` archive.
 2. Open Chrome and navigate to: `chrome://extensions/`
-3. Enable **Developer mode** (top right).
-4. Click **Load unpacked** and select this project folder.
+3. Enable **Developer mode** (top right). 
+4. Click **Load unpacked** and select the zipped folder. 
 5. The extension is now ready to use.
-
-## Usage
-
-- Open LinkedIn and go to your feed.
-- Run the content script function:
-  ```js
-  window.runLinkedinSearchAndScrape("your keywords", 50);
